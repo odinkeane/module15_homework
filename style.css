@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+div{
+    position: relative;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+
+button{
+    padding: 5px 10px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.primary{
+    background-color: white;
+    color: darkmagenta;
+    border: 2px solid darkmagenta !important;
+
+}
+.reverse-primary{
+    background-color: darkmagenta;
+    color: white;
+    border: 2px solid darkmagenta;
+}
+
+
+.primary svg, .reverse-primary svg{
+    fill: darkmagenta;
+    width: 1em;
+    height: 1em;
+}
+
+div::before{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+
+.task1::before{
+    content: "task1";
+}
+.task2::before{
+    content: "task2";
+}
+
+
+.chat{
+    /* width: 500px; */
+    padding: 20px;
+}
+
+.interactive-elements{
+    padding: 0px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.interactive-elements input{
+    all: unset;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    width: 300px;
+    
+}
+
+.messanger{
+    margin: 20px 0px;
+    height: 400px;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.text-message{
+    padding: 10px;
+    max-width: 50%;
+    width: max-content;
+    margin-bottom: 10px;
+}
+
+.right{
+
+    margin-left: auto;
+}
+.left{
+    margin-right: auto;
+}
